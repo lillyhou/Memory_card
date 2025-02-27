@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memory card</title>
+  <link rel="stylesheet" href="css/memory_card_style.css">
+  <meta name="description" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <script type= "module" src="js/memory_card.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Memory card</h1>
+  <article class="select_area">
+    <div class="username">
+      <h4>Username</h4>
+      <input id="username_input" type="text" placeholder="your name">
+    </div>
+
+    <div class="level-choice">
+      <h4>Choose a level and let's start the game!</h4>
+      <input id="8_pairs_option" type="radio" name="level" value="8">
+      <label for="8_pairs_option">4*4</label>
+      <input id="18_pairs_option" type="radio" name="level" value="18">
+      <label for="18_pairs_option">6*6</label>
+    </div>
+    <button id="start" type="submit">Start!</button>
+
+  </article>
+
+  <article class="timer">
+    <span id="count-up">00:00</span>
+  </article>
+
+  <article id="cardsFormat">
+
+
+  </article>
+
+
+
+  <footer class="records">
+
+    <h4>Records</h4>
+
+    <table id="recordsList">
+      <tr>
+        <th>User</th>
+        <th>Pairs</th>
+        <th>Time</th>
+      </tr>
+    </table>
+
+  </footer>
+
+</body>
+
+</html>
